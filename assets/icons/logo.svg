@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200" fill="none" role="img" aria-labelledby="vertexLogoTitle">
+  <title id="vertexLogoTitle">VERTEX PLUS KG — Добывающая компания</title>
+
+  <!-- Wordmark -->
+  <g font-family="Oswald, 'Arial Narrow', sans-serif" font-weight="700">
+    <text x="4" y="66" font-size="58" letter-spacing="0.5" font-style="italic" fill="#2C2C2C">VERTEX</text>
+    <text x="318" y="42" font-size="22" letter-spacing="0.5" font-style="italic" fill="#FF6600">KG</text>
+    <text x="66" y="150" font-size="58" letter-spacing="0.5" font-style="italic" fill="#2C2C2C">PLUS</text>
+  </g>
+  <g font-family="Oswald, sans-serif" font-weight="600" letter-spacing="1">
+    <text x="8" y="90" font-size="15" fill="#FF6600">ДОБЫВАЮЩАЯ</text>
+    <text x="8" y="107" font-size="15" fill="#FF6600">КОМПАНИЯ</text>
+  </g>
+
+  <!-- Excavator arm mark -->
+  <g transform="translate(410,4)">
+    <path d="M14 148 L100 30 L165 92" stroke="#FF6600" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M148 78 L200 96 L206 118 L188 140 L160 132 L150 108 Z" fill="#FF6600"/>
+    <circle cx="100" cy="30" r="11" fill="#2C2C2C"/>
+  </g>
+</svg>

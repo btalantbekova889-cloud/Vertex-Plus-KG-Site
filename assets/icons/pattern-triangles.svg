@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <pattern id="triGrid" width="30" height="26" patternUnits="userSpaceOnUse">
+      <polygon points="3,4 3,16 15,10" fill="#B3B3B3"/>
+      <polygon points="27,17 27,29 15,23" fill="#B3B3B3" transform="translate(0,-13) scale(1,1)"/>
+    </pattern>
+  </defs>
+  <rect width="120" height="120" fill="url(#triGrid)"/>
+</svg>
