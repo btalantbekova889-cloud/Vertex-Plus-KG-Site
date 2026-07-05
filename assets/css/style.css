@@ -159,7 +159,7 @@ section { position: relative; }
   padding: 18px 0;
 }
 .site-header.is-scrolled {
-  background: rgba(255,255,255,0.97);
+  background: #FFFFFF;
   box-shadow: 0 6px 24px rgba(0,0,0,0.08);
   padding: 10px 0;
 }
