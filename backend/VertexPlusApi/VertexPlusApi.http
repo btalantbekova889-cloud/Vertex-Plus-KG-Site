@@ -1,0 +1,18 @@
+@VertexPlusApi_HostAddress = http://localhost:5080
+
+GET {{VertexPlusApi_HostAddress}}/api/leads
+Accept: application/json
+
+###
+
+POST {{VertexPlusApi_HostAddress}}/api/leads
+Content-Type: application/json
+
+{
+  "name": "Азамат",
+  "phone": "+996 555 12 34 56",
+  "material": "Щебень, 10 тонн",
+  "comment": "Доставка на объект в Аламедине"
+}
+
+###
