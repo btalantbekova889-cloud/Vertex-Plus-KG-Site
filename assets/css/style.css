@@ -275,11 +275,11 @@ section { position: relative; }
 
 .hero-stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   padding-top: 32px;
   border-top: 1px solid rgba(255,255,255,0.18);
-  max-width: 900px;
+  max-width: 720px;
 }
 .hero-stat .num {
   font-family: var(--font-display);
@@ -809,7 +809,6 @@ section { position: relative; }
   .header-actions > a.btn-primary { display: none; }
   .about-grid, .contacts-grid { grid-template-columns: 1fr; }
   .about-media { max-width: 420px; margin: 0 auto; }
-  .hero-stats { grid-template-columns: repeat(2, 1fr); }
   .form-row { grid-template-columns: 1fr; }
 }
 
