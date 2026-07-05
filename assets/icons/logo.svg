@@ -12,12 +12,15 @@
     <text x="7" y="102" font-size="14" fill="#FF6600">КОМПАНИЯ</text>
   </g>
 
+  <!-- Speed-line accent connecting the wordmark to the boom -->
+  <path d="M6 25 L258 4" stroke="#FF6600" stroke-width="3.5" stroke-linecap="round"/>
+
   <!-- Excavator arm mark -->
-  <g transform="translate(266,2)">
-    <path d="M8 128 L84 24 L146 74" stroke="#FF6600" stroke-width="19" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-    <path d="M30 112 L79 44" stroke="#DB5600" stroke-width="5" stroke-linecap="round"/>
-    <path d="M84 24 L102 30 L93 41 Z" fill="#16283A"/>
-    <path d="M132 62 L176 78 L182 96 L173 116 L166 127 L163 117 L157 128 L154 118 L150 121 L128 104 L123 84 Z" fill="#FF6600"/>
-    <circle cx="84" cy="24" r="8" fill="#FFFFFF" stroke="#16283A" stroke-width="2.5"/>
+  <g transform="translate(250,0)">
+    <path d="M8 150 L92 8 L165 80" stroke="#FF6600" stroke-width="19" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M36 119 L86 33" stroke="#DB5600" stroke-width="5" stroke-linecap="round"/>
+    <path d="M92 8 L110 15 L100 26 Z" fill="#16283A"/>
+    <path d="M151 68 L195 84 L201 102 L192 122 L185 133 L182 123 L176 134 L173 124 L169 127 L147 110 L142 90 Z" fill="#FF6600"/>
+    <circle cx="92" cy="8" r="8" fill="#FFFFFF" stroke="#16283A" stroke-width="2.5"/>
   </g>
 </svg>
