@@ -17,10 +17,21 @@
 
   <!-- Excavator arm mark -->
   <g transform="translate(250,0)">
-    <path d="M8 165 L100 5 L180 85" stroke="#FF6600" stroke-width="21" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-    <path d="M16 138 L76 34" stroke="#FFA366" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
-    <path d="M100 5 L120 13 L108 25 Z" fill="#16283A"/>
-    <path d="M165 72 L212 90 L220 110 L210 132 L202 144 L198 133 L191 146 L187 135 L182 139 L158 120 L152 98 Z" fill="#FF6600"/>
-    <circle cx="100" cy="5" r="9" fill="#FFFFFF" stroke="#16283A" stroke-width="2.5"/>
+    <!-- boom (angular, tapered) -->
+    <path d="M4 172 L98 8 L112 20 L18 182 Z" fill="#FF6600"/>
+    <!-- stick (angular, tapered) -->
+    <path d="M100 10 L182 82 L172 98 L110 28 Z" fill="#FF6600"/>
+    <!-- boom highlight -->
+    <path d="M18 158 L82 40" stroke="#FFA366" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+    <!-- hydraulic cylinder on the stick -->
+    <path d="M124 40 L156 76" stroke="#DB5600" stroke-width="4" stroke-linecap="round"/>
+    <!-- elbow linkage bracket -->
+    <path d="M100 10 L120 16 L106 30 Z" fill="#16283A"/>
+    <!-- bucket -->
+    <path d="M165 76 L212 92 L221 112 L211 134 L196 148 L188 137 L182 148 L178 137 L174 141 L155 122 L150 100 Z" fill="#FF6600"/>
+    <!-- elbow pivot -->
+    <circle cx="100" cy="10" r="9" fill="#FFFFFF" stroke="#16283A" stroke-width="2.5"/>
+    <!-- bucket pivot -->
+    <circle cx="178" cy="90" r="6" fill="#FFFFFF" stroke="#16283A" stroke-width="2"/>
   </g>
 </svg>
