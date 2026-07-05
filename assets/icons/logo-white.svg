@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 190" fill="none" role="img" aria-labelledby="vertexLogoWhiteTitle">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 190" fill="none" role="img" aria-labelledby="vertexLogoWhiteTitle">
   <title id="vertexLogoWhiteTitle">VERTEX PLUS KG — Добывающая компания</title>
 
   <!-- Wordmark -->
@@ -13,14 +13,14 @@
   </g>
 
   <!-- Speed-line accent connecting the wordmark to the boom -->
-  <path d="M6 25 L258 4" stroke="#FF6600" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M6 25 L268 4" stroke="#FF6600" stroke-width="3.5" stroke-linecap="round"/>
 
   <!-- Excavator arm mark -->
   <g transform="translate(250,0)">
-    <path d="M8 150 L92 8 L165 80" stroke="#FF6600" stroke-width="19" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-    <path d="M36 119 L86 33" stroke="#DB5600" stroke-width="5" stroke-linecap="round"/>
-    <path d="M92 8 L110 15 L100 26 Z" fill="#FFFFFF"/>
-    <path d="M151 68 L195 84 L201 102 L192 122 L185 133 L182 123 L176 134 L173 124 L169 127 L147 110 L142 90 Z" fill="#FF6600"/>
-    <circle cx="92" cy="8" r="8" fill="#FFFFFF" stroke="#DB5600" stroke-width="2.5"/>
+    <path d="M8 165 L100 5 L180 85" stroke="#FF6600" stroke-width="21" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M16 138 L76 34" stroke="#FFA366" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+    <path d="M100 5 L120 13 L108 25 Z" fill="#FFFFFF"/>
+    <path d="M165 72 L212 90 L220 110 L210 132 L202 144 L198 133 L191 146 L187 135 L182 139 L158 120 L152 98 Z" fill="#FF6600"/>
+    <circle cx="100" cy="5" r="9" fill="#FFFFFF" stroke="#DB5600" stroke-width="2.5"/>
   </g>
 </svg>
