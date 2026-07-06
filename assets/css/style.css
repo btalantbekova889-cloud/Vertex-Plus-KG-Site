@@ -7,16 +7,16 @@
   --c-orange: #FF6600;
   --c-orange-dark: #DB5600;
   --c-blue: #2D5378;
-  --c-dark: #16283A;
-  --c-dark-2: #0B2740;
-  --c-blue-panel: #123B59;
-  --c-blue-panel-alt: #1B4A6B;
+  --c-dark: #1C3A52;
+  --c-dark-2: #1B4E76;
+  --c-blue-panel: #21567D;
+  --c-blue-panel-alt: #2C6690;
   --c-grey: #A8B9C4;
-  --c-grey-light: #EAF3FB;
-  --c-grey-lighter: #F2F8FC;
-  --c-sky-100: #DCEEFB;
-  --c-text-soft: #47626F;
-  --c-text-softer: #7A93A0;
+  --c-grey-light: #EEF7FF;
+  --c-grey-lighter: #F5FAFF;
+  --c-sky-100: #E3F2FC;
+  --c-text-soft: #4C6B7A;
+  --c-text-softer: #82A0AE;
   --c-white: #FFFFFF;
 
   --font-display: 'Oswald', 'Arial Narrow', sans-serif;
@@ -245,7 +245,7 @@ section { position: relative; }
 .hero::after {
   content: '';
   position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(18,58,90,0.62) 0%, rgba(18,58,90,0.32) 45%, rgba(10,38,60,0.75) 100%);
+  background: linear-gradient(180deg, rgba(27,78,118,0.55) 0%, rgba(27,78,118,0.25) 45%, rgba(20,60,90,0.68) 100%);
 }
 .hero-pattern {
   position: absolute;
@@ -465,7 +465,7 @@ section { position: relative; }
 /* ==========================================================================
    Products
    ========================================================================== */
-.products { background: var(--c-dark-2); }
+.products { background: radial-gradient(ellipse 900px 500px at 90% -10%, rgba(255,255,255,0.14), transparent 60%), var(--c-dark-2); }
 .products h2 { color: var(--c-white); }
 .products .section-head p { color: rgba(255,255,255,0.65); }
 .products .price-note { color: rgba(255,255,255,0.45); }
@@ -542,7 +542,7 @@ section { position: relative; }
    Advantages
    ========================================================================== */
 .advantages {
-  background: var(--c-dark-2);
+  background: radial-gradient(ellipse 900px 500px at 10% -10%, rgba(255,255,255,0.14), transparent 60%), var(--c-dark-2);
   color: var(--c-white);
   position: relative;
   overflow: hidden;
@@ -739,9 +739,10 @@ section { position: relative; }
    Footer
    ========================================================================== */
 .site-footer {
-  background: var(--c-dark-2);
+  background: radial-gradient(ellipse 900px 400px at 15% 0%, rgba(255,255,255,0.1), transparent 60%), var(--c-dark-2);
   color: rgba(255,255,255,0.7);
   padding: 64px 0 24px;
+  position: relative;
 }
 .footer-grid {
   display: grid;
