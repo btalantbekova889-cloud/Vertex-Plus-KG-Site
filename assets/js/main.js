@@ -2,6 +2,21 @@
 // deploying the API somewhere other than a local dotnet run on port 5080.
 var API_BASE_URL = 'http://localhost:5080';
 
+// WhatsApp number that receives orders from the contact form (no "+", no spaces).
+var WHATSAPP_NUMBER = '996702507188';
+
+function buildWhatsAppUrl(payload) {
+  var lines = [
+    'Новая заявка с сайта Vertex Plus KG',
+    '',
+    'Имя: ' + payload.name,
+    'Телефон: ' + payload.phone
+  ];
+  if (payload.material) { lines.push('Интересует: ' + payload.material); }
+  if (payload.comment) { lines.push('Комментарий: ' + payload.comment); }
+  return 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(lines.join('\n'));
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   var header = document.getElementById('siteHeader');
   var burger = document.getElementById('burger');
@@ -33,18 +48,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  // Contact form — sends the lead to the Vertex Plus KG API (backend/).
+  // Contact form — opens WhatsApp with the order pre-filled, and best-effort
+  // saves the lead to the Vertex Plus KG API (backend/) for record-keeping.
   var form = document.getElementById('contactForm');
   var success = document.getElementById('formSuccess');
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-
-      var submitBtn = form.querySelector('button[type="submit"]');
-      var originalBtnText = submitBtn.textContent;
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Отправляем…';
-      success.classList.remove('show', 'is-error');
 
       var payload = {
         name: form.name.value,
@@ -53,26 +63,21 @@ document.addEventListener('DOMContentLoaded', function () {
         comment: form.comment.value
       };
 
+      window.open(buildWhatsAppUrl(payload), '_blank', 'noopener');
+
+      success.textContent = 'Открываем WhatsApp — просто нажмите «Отправить» в чате, и заявка придёт нам сразу.';
+      success.classList.remove('is-error');
+      success.classList.add('show');
+      success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      form.reset();
+
+      // Best-effort: also save the lead in the database. Ignored if the API
+      // isn't running — WhatsApp above is the primary delivery channel.
       fetch(API_BASE_URL + '/api/leads', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
-      })
-        .then(function (res) {
-          if (!res.ok) { throw new Error('Request failed: ' + res.status); }
-          success.textContent = 'Спасибо! Заявка отправлена — мы свяжемся с вами в ближайшее время.';
-          success.classList.add('show');
-          form.reset();
-        })
-        .catch(function () {
-          success.textContent = 'Не удалось отправить форму автоматически. Позвоните нам по +996 702 507 188 или напишите в Instagram vertex.kg.';
-          success.classList.add('show', 'is-error');
-        })
-        .finally(function () {
-          submitBtn.disabled = false;
-          submitBtn.textContent = originalBtnText;
-          success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        });
+      }).catch(function () { /* WhatsApp already handled the delivery */ });
     });
   }
 });

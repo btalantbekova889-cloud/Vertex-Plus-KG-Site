@@ -829,3 +829,29 @@ section { position: relative; }
   .footer-grid { grid-template-columns: 1fr; }
   .cta-band .container { flex-direction: column; align-items: flex-start; text-align: left; }
 }
+
+/* ==========================================================================
+   WhatsApp floating button
+   ========================================================================== */
+.whatsapp-fab {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 400;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+  transition: transform var(--transition);
+}
+.whatsapp-fab:hover { transform: scale(1.08); }
+.whatsapp-fab svg { width: 30px; height: 30px; fill: var(--c-white); }
+
+@media (max-width: 640px) {
+  .whatsapp-fab { right: 16px; bottom: 16px; width: 52px; height: 52px; }
+  .whatsapp-fab svg { width: 27px; height: 27px; }
+}
